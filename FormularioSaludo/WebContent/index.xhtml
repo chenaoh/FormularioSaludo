@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Primer Pagina</title>
+</h:head> 
+<body> 
+	<f:view>
+		<h1>BIENVENIDO</h1>
+			<h:form>
+				<h:outputText value="#{saludo.mensaje}" />
+				<br/><br/>
+				<h:inputText value="#{saludo.nombre}" maxlength="15" />	
+				<h:commandButton value="Enviar" action="#{saludo.saludar()}"/>
+				
+				<br/><br/>
+				<h:outputText value="#{saludo.saludo}" />				
+			</h:form>
+</f:view>
+</body>
+ 
+</html>
+
